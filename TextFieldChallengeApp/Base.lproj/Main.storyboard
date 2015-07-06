@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextFieldChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ZIP code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZz-kd-5W4">
+                                <rect key="frame" x="16" y="68" width="505" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Enter ZIP code"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter cash amount" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9j-T5-3La">
+                                <rect key="frame" x="16" y="138" width="505" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3P-Ak-CVj">
+                                <rect key="frame" x="16" y="208" width="505" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEa-aU-32B">
+                                <rect key="frame" x="529" y="208" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H3P-Ak-CVj" firstAttribute="top" secondItem="H9j-T5-3La" secondAttribute="bottom" constant="40" id="2I6-Dk-dVN"/>
+                            <constraint firstItem="XZz-kd-5W4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="8YP-xC-5QG"/>
+                            <constraint firstItem="fEa-aU-32B" firstAttribute="leading" secondItem="H3P-Ak-CVj" secondAttribute="trailing" constant="8" id="BXb-o6-nu3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fEa-aU-32B" secondAttribute="trailing" constant="6" id="IfM-3h-ndZ"/>
+                            <constraint firstItem="H9j-T5-3La" firstAttribute="top" secondItem="XZz-kd-5W4" secondAttribute="bottom" constant="40" id="bHd-KX-1k3"/>
+                            <constraint firstItem="H9j-T5-3La" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hOa-MI-KBb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XZz-kd-5W4" secondAttribute="trailing" constant="63" id="lO4-FZ-oOw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H9j-T5-3La" secondAttribute="trailing" constant="63" id="lhh-ya-9aj"/>
+                            <constraint firstItem="XZz-kd-5W4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pgl-vb-1nI"/>
+                            <constraint firstItem="fEa-aU-32B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="188" id="xqG-38-5sx"/>
+                            <constraint firstItem="H3P-Ak-CVj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="z3D-qo-JUH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
