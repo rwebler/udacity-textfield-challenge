@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7184C3C1B4B4C4E0001E2A4 /* ZipTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7184C3B1B4B4C4E0001E2A4 /* ZipTextFieldDelegate.swift */; };
 		F7C63A711B4609330058C1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C63A701B4609330058C1D0 /* AppDelegate.swift */; };
 		F7C63A731B4609330058C1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C63A721B4609330058C1D0 /* ViewController.swift */; };
 		F7C63A761B4609330058C1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C63A741B4609330058C1D0 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7184C3B1B4B4C4E0001E2A4 /* ZipTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipTextFieldDelegate.swift; sourceTree = "<group>"; };
 		F7C63A6B1B4609320058C1D0 /* TextFieldChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C63A6F1B4609330058C1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C63A701B4609330058C1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				F7C63A771B4609330058C1D0 /* Images.xcassets */,
 				F7C63A791B4609330058C1D0 /* LaunchScreen.xib */,
 				F7C63A6E1B4609330058C1D0 /* Supporting Files */,
+				F7184C3B1B4B4C4E0001E2A4 /* ZipTextFieldDelegate.swift */,
 			);
 			path = TextFieldChallengeApp;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C63A731B4609330058C1D0 /* ViewController.swift in Sources */,
+				F7184C3C1B4B4C4E0001E2A4 /* ZipTextFieldDelegate.swift in Sources */,
 				F7C63A711B4609330058C1D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				F7C63A8C1B4609330058C1D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C63A8D1B4609330058C1D0 /* Build configuration list for PBXNativeTarget "TextFieldChallengeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				F7C63A8F1B4609330058C1D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

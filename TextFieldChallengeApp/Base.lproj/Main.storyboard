@@ -52,6 +52,10 @@
                             <constraint firstItem="H3P-Ak-CVj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="z3D-qo-JUH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lockableTextSwitch" destination="fEa-aU-32B" id="5zY-xA-PmZ"/>
+                        <outlet property="textField1" destination="XZz-kd-5W4" id="MdR-qE-hQO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
